@@ -5,7 +5,7 @@ function findPrimes(num)
     var primes=[2, 3]; // Let's initialize the array with the first 2 primes.
         for (n=5; n<=num; n+=2) //Now we can start from 5 and check only odd numbers.
         { 
-            i=1;
+            i=1; // We start at prime[1] (which is 3), because all our n are odd.
             var checkPrime = true;
             while (primes[i]<=Math.sqrt(n)) // All divisors of n may be <= its sqrt(n).
                 {

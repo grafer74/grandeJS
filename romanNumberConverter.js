@@ -1,14 +1,14 @@
-// With this script we can easily convert from arabic to roman numbers in the range 1 to 3999
+// With this script we can easily convert from arabic to roman numbers in the range 1 to 3999.
 
 function convert2Roman(num) {
 	if (num === 0)
     {
       return "ERROR! We cannot convert 0";
     }
- else if (num < 4000) // There is no universal way to write numbers >= 4000
+ else if (num < 4000) // There is no universal way to write numbers >= 4000.
  { 
   var digits = []; 
-  for (i=1000; i>9; i/=10) // 3 iterations: for Thousands, Hundreds, Tens
+  for (i=1000; i>9; i/=10) // 3 iterations: for Thousands, Hundreds, Tens.
     {
       myFloor = Math.floor(num/i);
       digits.push(myFloor);
@@ -22,7 +22,7 @@ function convert2Roman(num) {
     rHundreds = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];
     rThousands = ["", "M", "MM", "MMM"];
   
-  var romanNumber = rThousands[digits[0]] + rHundreds[digits[1]] + rTens[digits[2]] + rUnits[digits[3]]; // Finally we can build the Roman number string
+  var romanNumber = rThousands[digits[0]] + rHundreds[digits[1]] + rTens[digits[2]] + rUnits[digits[3]]; // Finally we can build the Roman number string.
   
   
  return romanNumber;

@@ -14,7 +14,8 @@ function convert2Roman(num) {
     }
   digits.push(num); // Here we assign Units.
   
-    rUnits = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"];
+  // The first element (at position [0]) for each array is "", so we do not write any symbol if we do not need it after the convertion.
+    rUnits = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]; 
     rTens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
     rHundreds = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];
     rThousands = ["", "M", "MM", "MMM"];

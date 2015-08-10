@@ -1,4 +1,4 @@
-// With this script we can easily convert from arabic to roman numbers.
+// With this script we can easily convert from arabic to roman numbers in the range 1 to 3999
 
 function convert2Roman(num) {
 	if (num === 0)
